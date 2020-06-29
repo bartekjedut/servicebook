@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.bartek.servicebook.controller.AddViewDataPaneController">
+   <children>
+      <ComboBox fx:id="vehicleComboBox" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+      <TextField fx:id="licensePlateTextField" prefWidth="200.0" promptText="Nr rejestracyjny:" VBox.vgrow="ALWAYS" />
+      <TextField fx:id="brandTextField" prefWidth="200.0" promptText="Marka:" VBox.vgrow="ALWAYS" />
+      <TextField fx:id="modelTextField" prefWidth="200.0" promptText="Model:" VBox.vgrow="ALWAYS" />
+      <TextField fx:id="ownerTextField" prefWidth="200.0" promptText="Właściciel:" VBox.vgrow="ALWAYS" />
+      <TextField fx:id="productionYearTextField" prefWidth="200.0" promptText="Rok produkcji:" VBox.vgrow="ALWAYS" />
+      <TextField fx:id="engineTextField" prefWidth="200.0" promptText="Silnik:" VBox.vgrow="ALWAYS" />
+      <Separator prefWidth="200.0" />
+      <TextField fx:id="dateTextField" prefWidth="200.0" promptText="Data [YYYY-MM-DD]:" VBox.vgrow="ALWAYS" />
+      <TextField fx:id="mileageTextField" prefWidth="200.0" promptText="Przebieg [km]:" VBox.vgrow="ALWAYS" />
+      <TextArea fx:id="serviceRecordTextArea" prefHeight="350.0" prefWidth="350.0" promptText="Wpis:" VBox.vgrow="ALWAYS" />
+      <Button fx:id="addButton" minHeight="25.0" minWidth="80.0" mnemonicParsing="false" text="Dodaj" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="25.0" right="40.0" top="5.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
